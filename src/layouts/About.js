@@ -1,6 +1,7 @@
 function About() {
   return(
     <>
+    <div className="benefits">
       <h2 className="visually-hidden">Преимущества ЖК</h2>
       <div className="container container--sm">
         <div className="benefits__row">
@@ -40,6 +41,7 @@ function About() {
           </div>
         </div>
       </div>
+    </div>
     </>
   )
 }

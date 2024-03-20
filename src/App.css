@@ -129,7 +129,7 @@ a:hover {
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
-          clip-path: inset(50%); /* browsers in the future */
+  clip-path: inset(50%); /* browsers in the future */
   /* Prevent the screen reader to skip spaces between words */
   white-space: nowrap;
 }

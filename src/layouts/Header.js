@@ -1,5 +1,7 @@
 import mouse from '../img/header/mouse.svg';
 import logo from '../img/logo.svg';
+import { Link } from 'react-router-dom'
+
 function Header() {
     return (
         <header className="header none1">
@@ -13,7 +15,7 @@ function Header() {
                 <nav className="nav">
                   <ul className="nav__list">
                     <li>
-                      <a href="#!">О комплексе</a>
+                      <a href="#!" >О комплексе</a>
                     </li>
                     <li>
                       <a href="#!">Район</a>
@@ -22,7 +24,7 @@ function Header() {
                       <a href="#!">Каталог квартир</a>
                     </li>
                     <li>
-                      <a href="#!">Ипотека</a>
+                      <Link to="/ipoteka">Ипотека</Link>
                     </li>
                     <li>
                       <a href="#!">Контакты</a>

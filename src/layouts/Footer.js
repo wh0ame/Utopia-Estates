@@ -1,7 +1,7 @@
 function Footer(){
   return(
     <>
-      <footer>
+      <footer className="footer">
         <div className="container">
           <div className="footer__grid">
             <div className="footer__logo">
