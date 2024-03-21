@@ -8,6 +8,7 @@ import Map from './layouts/Map';
 import Feedback from './layouts/Feedback';
 import Footer from './layouts/Footer';
 import Main from './layouts/Main';
+import Ipoteka from './Ipoteka/Ipoteka';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Feedback />
       <Footer />
       <Main />
+      <Ipoteka />
       {/* YouTube LightBox */}
       <div id="youtubelightbox" className="youtubelightbox">
         <div className="youtubelightbox__centeredchild">
