@@ -5,9 +5,11 @@ export default function Ipoteka(){
     const [vznosValue, setVznosValue] = useState(2500000)
     const [srokValue, setSrokValue] = useState(10)
     const [stavkaValue, setStavkaValue] = useState(3)
-
     function creditInput(creditInput) {
         setCreditValue(creditInput.target.value)
+        if (vznosValue > creditInput.target.value) {
+            setVznosValue(creditInput.target.value);
+        }
     }
 
     function vznosInput(vznosInput) {
@@ -22,15 +24,19 @@ export default function Ipoteka(){
         setStavkaValue(stavkaInput.target.value)
     }
 
+    let StavkaIpotekaMonth = Math.round((creditValue - vznosValue) / stavkaValue / 12 / 100);
+    let IpotekaMonth = Math.round((creditValue - vznosValue) * StavkaIpotekaMonth * stavkaValue / ( stavkaValue - 1 ))
+    let Overprice = (IpotekaMonth * srokValue - (creditValue - vznosValue))
+    let AllSum = (Overprice + (creditValue - vznosValue) )
     return(
         <>
-            <div className="mainown bg-sky-500">
+            <div className="mainown bg-sky-500 font-sans">
             <div className="awesome">
                 <label htmlFor="name">Введите своё имя: </label>
                 <input type="text" id="name" />
             </div>
             </div>
-            <div className="container my-container">
+            <div className="container my-container font-sans">
                 <div className="card_ipoteka">
                 <div className="card-header my-card-header">
                     <h5 className="card-title">Калькулятор ипотечного кредитования</h5>
@@ -71,7 +77,7 @@ export default function Ipoteka(){
                     className="form-control-range"
                     id="firstContributionRange"
                     min={0}
-                    max={10000000}
+                    max={creditValue}
                     value={vznosValue}
                     onInput={vznosInput}
                     />
@@ -130,13 +136,23 @@ export default function Ipoteka(){
                 <hr />
                 <div className="card-footer">
                     <p className="my-result">
-                    <strong>Итого:</strong> <span id="payment">34 000 ₽</span> в месяц
+                    <strong>Ежемесячная ставка:</strong> <span id="payment">
+                        {StavkaIpotekaMonth}  %
+                        </span> 
+                    </p>
+                    <p className="my-result">
+                    <strong>Итого:</strong> <span id="payment">
+                        {IpotekaMonth}
+                        </span> ₽ в месяц
                     </p>
                     <small className="form-text text-muted">
-                    Общая выплата: <span id="common">5 000 000 ₽</span>
+                    Общая выплата: <span id="common">
+                        {AllSum} ₽
+                    </span>
                     </small>
                     <small className="form-text text-muted">
-                    Переплата: <span id="subpayment">3 230 000 ₽</span>
+                    Переплата: <span id="subpayment">
+                        {Overprice} ₽</span>
                     </small>
                 </div>
                 </div>
