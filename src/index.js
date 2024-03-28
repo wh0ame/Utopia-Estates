@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Ipoteka from './Ipoteka/Ipoteka';
 import Catalog from './catalog/Catalog';
+import TestPivo from './catalog/Pivo';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
     path: "/catalog",
     element: <Catalog />,
   },
+  {
+    path: "/pizdes",
+    element: <TestPivo />
+  }
 ]);
 
 

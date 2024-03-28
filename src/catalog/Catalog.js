@@ -2,7 +2,7 @@ export default function Catalog(){
     return(
         <>
         <div className="container">
-          <div className="apartments__title">
+          <div className="apartments__title text-center">
             <h2 className="title-2">Наши квартиры</h2>
           </div>
           <div className="apartments__cards">
