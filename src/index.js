@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Ipoteka from './Ipoteka/Ipoteka';
+import Catalog from './catalog/Catalog';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/ipoteka",
     element: <Ipoteka />,
+  },
+  {
+    path: "/catalog",
+    element: <Catalog />,
   },
 ]);
 

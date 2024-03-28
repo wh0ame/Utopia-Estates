@@ -21,7 +21,7 @@ function Header() {
                       <a href="#!">Район</a>
                     </li>
                     <li>
-                      <a href="#!">Каталог квартир</a>
+                      <Link to="/catalog">Каталог квартир</Link>
                     </li>
                     <li>
                       <Link to="/ipoteka">Ипотека</Link>
