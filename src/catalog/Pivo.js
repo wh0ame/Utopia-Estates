@@ -1,32 +1,46 @@
 import React, { useState } from 'react';
-
 const rooms = [
   {
-    title: "Квартира 1",
+    title: "Пентхаус Utopia House",
     src: "/img/cards/01.jpg",
     description: [
-      "Цена: 15 000 000 Р",
-      "Бассейн: ✓",
+      "Цена: 10 000 000 Р",
+      "Бассейн: ☓",
+      "Кол-во комнат: 5",
+      "Обслуживание номера: ☓"
     ],
   },
   {
-    title: "Квартира 1",
-    src: "/img/cards/01.jpg",
+    title: "Апартаменты NiceLoft ",
+    src: "/img/cards/02.jpg",
     description: [
-      "Цена: 150 000 000 Р",
-      "Бассейн: ✓",
+      "Цена: 20 000 000 Р",
+      "Бассейн: ☓",
+      "Кол-во комнат: 6",
+      "Обслуживание номера: ✓",
     ],
   },
   {
-    title: "Квартира 1",
-    src: "/img/cards/01.jpg",
+    title: "Апартаменты LoftStudio",
+    src: "/img/cards/03.jpg",
     description: [
-      "Цена: 1500 000 000 Р",
+      "Цена: 30 000 000 Р",
       "Бассейн: ✓",
+      "Кол-во комнат: 7",
+      "Обслуживание номера: ☓",
+    ],
+  },
+  {
+    title: "Loft Квартира Престиж",
+    src: "/img/cards/04.jpg",
+    description: [
+      "Цена: 40 000 000 Р",
+      "Бассейн: ✓",
+      "Кол-во комнат: 8",
+      "Обслуживание номера: ✓"
     ],
   },
 ]
-
 
 export default function TestPivo() {
   const roomsJsx = rooms.map((room, i) => {
@@ -66,15 +80,15 @@ function CreateModal({ room }) {
       {room.title}
       {
         modalIsOpen ?
-          <div className='w-full h-full bg-white fixed flex justify-center items-center z-10 left-0 top-0' >
-            <div className='text-black'>
+          <div className='w-full h-full bg-gradient-to-b from-gray-500 fixed flex justify-center items-center z-10 left-0 top-0' >
+            <div className='text-white text-center'>
               <img
                 className="card__img"
                 src={room.src}
                 alt="Пентхаус “Loft Олимп”"
               />
               {descriptionJsx}
-              <button className='font-bold' onClick={closeModal}>Закрыть</button>
+              <button className='font-bold text-slate-400' onClick={closeModal}>Закрыть</button>
             </div>
           </div>
         : ''
