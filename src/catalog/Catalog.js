@@ -81,6 +81,7 @@ function CreateModal({ room }) {
   })
 
   return(
+    <>
     <div className='card' onClick={openModal}>
       <img
           className="card__img"
@@ -88,21 +89,22 @@ function CreateModal({ room }) {
           alt="Пентхаус “Loft Олимп”"
       />
       <h3 className="card__title">{room.title}</h3>
-      {
-        modalIsOpen ?
-          <div className='w-full h-full bg-gradient-to-b from-gray-500 fixed flex justify-center items-center z-10 left-0 top-0' >
-            <div className='text-white text-center'>
-              <img
-                className="card__img"
-                src={room.src}
-                alt="Пентхаус “Loft Олимп”"
-              />
-              {descriptionJsx}
-              <button className='font-bold text-slate-400' onClick={closeModal}>Закрыть</button>
-            </div>
-          </div>
-        : ''
-      }
     </div>
+    {
+      modalIsOpen ?
+        <div className='w-full h-full bg-gradient-to-b from-gray-500 fixed flex justify-center items-center z-10 left-0 top-0' >
+          <div className='text-white text-center'>
+            <img
+              className="card__img"
+              src={room.src}
+              alt="Пентхаус “Loft Олимп”"
+            />
+            {descriptionJsx}
+            <button className='font-bold text-slate-400' onClick={closeModal}>Закрыть</button>
+          </div>
+        </div>
+      : ''
+    }
+    </>
   )
 }
