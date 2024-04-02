@@ -15,7 +15,7 @@ function Header() {
                 <nav className="nav">
                   <ul className="nav__list">
                     <li>
-                      <a href="#!" >О комплексе</a>
+                      <Link to="/header">О комплексе</Link>
                     </li>
                     <li>
                       <a href="#!">Район</a>

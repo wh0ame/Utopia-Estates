@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import Ipoteka from './Ipoteka/Ipoteka';
 import Catalog from './catalog/Catalog';
 import TestPivo from './catalog/Pivo';
+import Header from './layouts/Header';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -27,7 +28,11 @@ const router = createBrowserRouter([
   {
     path: "/pizdes",
     element: <TestPivo />
-  }
+  },
+  {
+    path: "/header",
+    element: <Header />
+  },
 ]);
 
 
