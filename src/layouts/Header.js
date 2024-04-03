@@ -8,7 +8,7 @@ function Header() {
         <div className="header__top">
           <div className="container">
             <div className="header__top-row">
-              <a href="#!">
+              <a href="#">
                 <img src={logo} alt="UtopiaEstates" />
               </a>
               <div className="header__nav">
@@ -18,7 +18,7 @@ function Header() {
                       <Link to="/header">О комплексе</Link>
                     </li>
                     <li>
-                      <a href="#!">Район</a>
+                      <a href="#map">Район</a>
                     </li>
                     <li>
                       <Link to="/catalog">Каталог квартир</Link>
@@ -27,7 +27,7 @@ function Header() {
                       <Link to="/ipoteka">Ипотека</Link>
                     </li>
                     <li>
-                      <a href="#!">Контакты</a>
+                      <Link to="/contacts">Контакты</Link>
                     </li>
                   </ul>
                 </nav>

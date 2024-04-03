@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import Ipoteka from './Ipoteka/Ipoteka';
 import Catalog from './catalog/Catalog';
 import TestPivo from './catalog/Pivo';
-import Header from './layouts/Header';
 import Contacts from './contacts/Contacts';
 import {
   createBrowserRouter,
@@ -32,7 +31,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/header",
-    element: <Header />
+    element: <App />
   },
   {
     path: "/contacts",

@@ -24,8 +24,8 @@ function Feedback(){
             placeholder="Ваш телефон"
             autoComplete="off"
           />
-          <button type="submit" className="form__btn">
-            Посмотреть район
+          <button type="submit" className="form__btn italic">
+            Отправить
           </button>
         </form>
       </div>

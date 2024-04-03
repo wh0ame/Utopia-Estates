@@ -47,16 +47,13 @@ export default function Ipoteka(){
                             <Link to="/header">О комплексе</Link>
                             </li>
                             <li>
-                            <a href="#!">Район</a>
-                            </li>
-                            <li>
                             <Link to="/catalog">Каталог квартир</Link>
                             </li>
                             <li>
                             <Link to="/ipoteka">Ипотека</Link>
                             </li>
                             <li>
-                            <a href="#!">Контакты</a>
+                            <Link to="/contacts">Контакты</Link>
                             </li>
                         </ul>
                         </nav>

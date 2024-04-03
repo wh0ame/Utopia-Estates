@@ -5,7 +5,7 @@ function Footer(){
         <div className="container">
           <div className="footer__grid">
             <div className="footer__logo">
-              <a href="#!">
+              <a href="#">
                 <img src="./img/logo.svg" alt="Utopia Estates" />
               </a>
             </div>
