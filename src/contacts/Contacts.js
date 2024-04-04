@@ -1,6 +1,7 @@
 import './contact.css';
 import Footer from '../layouts/Footer';
 import SmallHeader from '../layouts/SmallHeader';
+import { Link } from 'react-router-dom'
 
 export default function Contacts(){
     return(
@@ -45,7 +46,7 @@ export default function Contacts(){
     />
     <label htmlFor="checkbox-at">
       Настоящим подтверждаю, что я ознакомлен и согласен с{" "}
-      <a href="#rules">пользовательским соглашением</a>
+      <Link to="/agreement">пользовательским соглашением</Link>
     </label>
     <input type="hidden" name="subject-at" defaultValue="Тема формы" />
     <button id="submit-at" className="form-at-btn">

@@ -4,6 +4,7 @@ import Ipoteka from './Ipoteka/Ipoteka';
 import Catalog from './catalog/Catalog';
 import TestPivo from './catalog/Pivo';
 import Contacts from './contacts/Contacts';
+import Agreement from './agreement/Agreement';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
   {
     path: "/contacts",
     element: <Contacts />
+  },
+  {
+    path: "/agreement",
+    element: <Agreement />
   },
 ]);
 
