@@ -3,6 +3,7 @@ import IpotekaCode from "./IpotekaCode";
 import mouse from '../img/header/mouse.svg';
 import logo from '../img/logo.svg';
 import { Link } from 'react-router-dom';
+import './IpotekaStyle.css';
 
 export default function Ipoteka(){
     const [creditValue, setCreditValue] = useState(12000000)
@@ -62,28 +63,9 @@ export default function Ipoteka(){
             </div>
         </div>
             <div className="container my-container font-sans">
-            <div className="card_ipoteka">
-                <p>
-                <div className="cta__form form">
-                    <div className="awesome p-5">
-                        <input
-                        type="text"
-                        className="form__input"
-                        placeholder="Ваше имя"
-                        autoComplete="off"
-                        />
-                        <input
-                        data-tel-input=""
-                        type="text"
-                        className="form__input"
-                        placeholder="Ваша фамилия"
-                        autoComplete="off"
-                        />
-                    </div>
-                </div>
-                </p>
+            <div className="card_ipoteka p-10">
             <div className="card-header my-card-header">
-                <h5 className="card-title">Калькулятор ипотечного кредитования</h5>
+                <h5 className="card-title text-center mb-5 font-black underline">Калькулятор ипотечного кредитования</h5>
             </div>
             <div className="card-body">
                 <label htmlFor="creditText">Стоимость недвижимости:</label>
@@ -103,7 +85,7 @@ export default function Ipoteka(){
                     value={creditValue}
                     onInput={creditInput}
                 />
-                <small id="creditNumberHolder" className="form-text text-muted">
+                <small id="creditNumberHolder" className="form-text text-muted p-3">
                 Сумма, которую за вас заплатит банк.
                 </small>
             </div>
@@ -127,10 +109,9 @@ export default function Ipoteka(){
                 />
                 <small
                 id="firstContributionNumberHolder"
-                className="form-text text-muted"
+                className="form-text text-muted p-3"
                 >
-                Ваш первичный взнос в качестве погашения кредита (обычно сразу после
-                сделки)
+                Ваш первичный взнос в качестве погашения кредита
                 </small>
             </div>
             <div className="card-body">
@@ -151,7 +132,7 @@ export default function Ipoteka(){
                 value={srokValue}
                 onInput={srokInput}
                 />
-                <small id="returnPeriodNumberHolder" className="form-text text-muted">
+                <small id="returnPeriodNumberHolder" className="form-text text-muted p-3">
                 Как долго в годах планируете возвращать долг.
                 </small>
             </div>
@@ -173,7 +154,7 @@ export default function Ipoteka(){
                 onInput={stavkaInput}
                 step="0.01"
                 />
-                <small id="percentNumberHolder" className="form-text text-muted">
+                <small id="percentNumberHolder" className="form-text text-muted p-3">
                 Столько процентов начисляется на ваш долг в год.
                 </small>
             </div>
@@ -199,9 +180,36 @@ export default function Ipoteka(){
                     {Overprice} ₽</span>
                 </small>
             </div>
+            <p>
+                    <div className="container">
+                    <form className="feedback__form form p-5">
+                    <p className="form__privacy form__privacy--bottom">
+                        *Мы никому не передаем ваши данные. <br />И не сохраняем ваш номер в
+                        базу.
+                    </p>
+                    <input
+                        type="text"
+                        className="form__input"
+                        placeholder="Ваше имя"
+                        autoComplete="off"
+                    />
+                    <input
+                        data-tel-input=""
+                        type="text"
+                        className="form__input"
+                        placeholder="Ваш телефон"
+                        autoComplete="off"
+                    />
+                    <button type="submit" className="form__btn italic">
+                        Отправить заявку
+                    </button>
+                    </form>
+                    </div>
+                </p>
             </div>
             <canvas id="graph" width={400} height={250} />
             </div>
+            
 
             <footer className="footer">
                 <div className="container">
