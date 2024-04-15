@@ -7,7 +7,7 @@
     color: #fff;
 }
 
-body {
+.Atribut {
     position: relative;
     margin: 0;
     padding: 0;
@@ -18,17 +18,17 @@ body {
     background-color: #222;
     overflow: hidden;
 }
-body input[type="range"] {
+.Atribut input[type="range"] {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     width: 200px;
     background-color: transparent;
 }
-body input[type="range"]:focus {
+.Atribut input[type="range"]:focus {
     outline-color: #f8b195;
 }
-body input[type="range"]::-webkit-slider-runnable-track {
+.Atribut input[type="range"]::-webkit-slider-runnable-track {
     -webkit-appearance: none;
     appearance: none;
     height: 3px;
@@ -37,7 +37,7 @@ body input[type="range"]::-webkit-slider-runnable-track {
     background: linear-gradient(to right, #f67280 0%, #c06c84 50%, #355c7d 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f67280", endColorstr="#355c7d", GradientType=1 );
 }
-body input[type="range"]::-moz-range-track {
+.Atribut input[type="range"]::-moz-range-track {
     -moz-appearance: none;
     appearance: none;
     height: 3px;
@@ -46,7 +46,7 @@ body input[type="range"]::-moz-range-track {
     background: linear-gradient(to right, #f67280 0%, #c06c84 50%, #355c7d 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f67280", endColorstr="#355c7d", GradientType=1 );
 }
-body input[type="range"]::-ms-track {
+.Atribut input[type="range"]::-ms-track {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -57,7 +57,7 @@ body input[type="range"]::-ms-track {
     background: linear-gradient(to right, #f67280 0%, #c06c84 50%, #355c7d 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f67280", endColorstr="#355c7d", GradientType=1 );
 }
-body input[type="range"]::-webkit-slider-thumb {
+.Atribut input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     border: 2px solid #f8b195;
@@ -71,10 +71,10 @@ body input[type="range"]::-webkit-slider-thumb {
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
     cursor: grab;
 }
-body input[type="range"]::-webkit-slider-thumb:active {
+.Atribut input[type="range"]::-webkit-slider-thumb:active {
     cursor: grabbing;
 }
-body input[type="range"]::-moz-range-thumb {
+.Atribut input[type="range"]::-moz-range-thumb {
     -moz-appearance: none;
     appearance: none;
     border: 2px solid #f8b195;
@@ -88,10 +88,10 @@ body input[type="range"]::-moz-range-thumb {
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
     cursor: grab;
 }
-body input[type="range"]::-moz-range-thumb:active {
+.Atribut input[type="range"]::-moz-range-thumb:active {
     cursor: grabbing;
 }
-body input[type="range"]::-ms-thumb {
+.Atribut input[type="range"]::-ms-thumb {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -106,6 +106,6 @@ body input[type="range"]::-ms-thumb {
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
     cursor: grab;
 }
-body input[type="range"]::-ms-thumb:active {
+.Atribut input[type="range"]::-ms-thumb:active {
     cursor: grabbing;
 }

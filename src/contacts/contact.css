@@ -17,7 +17,7 @@
     font-size: 0;
     padding: 20px;  
     letter-spacing: 0;    
-    background: #12293d;
+    background: #2D343C;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 10px 18px rgba(0,0,0,0.2);
 }
 .form-at * {
@@ -28,8 +28,8 @@
 .no-validate-input-at {
     width: 100%;
     position: relative;
-    background-color: #4f46ec;
-    border: 2px solid #BFE2FF;
+    background-color: #D4C17F;
+    border: 2px solid #f67280;
     border-radius: 2px;
     margin-bottom: 20px;
 }
@@ -93,7 +93,7 @@ input.input-at:focus {
     display: block;
     padding: 0 40px;
     height: 50px;
-    background-color: #8c26eb;
+    background-color: #D4C17F;
     border-radius: 2px;
     font-size: 16px;
     font-weight: bold;
@@ -107,7 +107,7 @@ input.input-at:focus {
     cursor: pointer;        
 }
 .form-at-btn:hover {
-    background-color: #333333;
+    background-color: #000000;
 }
 .form-at-btn[disabled] {
     opacity: .6;
@@ -183,11 +183,11 @@ input.input-at:focus {
 }
 .form-at input[type=checkbox]:checked + label:before{
     content: '\2714';
-    color:#337AB7;
+    color:#D4C17F;
     font-size: 14px;
     text-align: center;
     font-weight: bold;
-    border: 2px solid #337AB7;
+    border: 2px solid #D4C17F;
 }
 @media (max-width: 768px) {
     .validate-input-at.w-50 {
@@ -201,4 +201,6 @@ input.input-at:focus {
         opacity: 1;
     }
 }
-
+.input-at::placeholder{
+    color: #000 !important; 
+}

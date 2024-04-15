@@ -62,6 +62,7 @@ export default function Ipoteka(){
                 </div>
             </div>
         </div>
+            <div className="Atribut">
             <div className="container my-container font-sans">
             <div className="card_ipoteka p-10">
             <div className="card-header my-card-header">
@@ -208,6 +209,7 @@ export default function Ipoteka(){
                 </p>
             </div>
             <canvas id="graph" width={400} height={250} />
+            </div>
             </div>
             
 
