@@ -4,6 +4,7 @@ import mouse from '../img/header/mouse.svg';
 import logo from '../img/logo.svg';
 import { Link } from 'react-router-dom';
 import './IpotekaStyle.css';
+import SmallHeader from "../layouts/SmallHeader";
 
 export default function Ipoteka(){
     const [creditValue, setCreditValue] = useState(12000000)
@@ -35,38 +36,7 @@ export default function Ipoteka(){
     let AllSum = (Overprice + (creditValue - vznosValue) )
     return(
         <>
-            <div className="header__top">
-                <div className="container">
-                    <div className="header__top-row">
-                    <a href="#!">
-                        <img src={logo} alt="UtopiaEstates" />
-                    </a>
-                    <div className="header__nav">
-                        <nav className="nav">
-                        <ul className="nav__list">
-                            <li>
-                            <Link to="/header">О комплексе</Link>
-                            </li>
-                            <li>
-                            <Link to="/catalog">Каталог квартир</Link>
-                            </li>
-                            <li>
-                            <Link to="/ipoteka">Ипотека</Link>
-                            </li>
-                            <li>
-                            <Link to="/contacts">Контакты</Link>
-                            </li>
-                        </ul>
-                        </nav>
-                    </div>
-                        <div className="header__nav-btn">
-                        <button className="nav-icon-btn">
-                            <div className="nav-icon" />
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <SmallHeader />
             <div className="Atribut">
             <div className="container my-container font-sans">
             <div className="card_ipoteka p-10">

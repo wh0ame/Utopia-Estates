@@ -11,6 +11,12 @@ function Header() {
     setIsMenu(true);
   }
 
+  function menuClose(e){
+    if (e.target.id == "menu-modal") {
+      setIsMenu(false);
+    }
+  }
+
 
     return (
         <header className="header none1">
@@ -48,18 +54,20 @@ function Header() {
               </div>
               {
                 isMenu
-              ?(<div className='top-0 left-0 fixed w-[100vw] h-[100vh] bg-white/50 flex flex-col gap-5 justify-center items-center text-black'>
-                <div>
-                  123
-                </div>
-                <div>
-                  123
-                </div>
-                <div>
-                  123
-                </div>
-              </div>)
-              : ''
+                ? (
+                  <div onClick={menuClose} id="menu-modal" className='top-0 left-0 fixed w-[100vw] h-[100vh] bg-white/50 flex flex-col gap-5 justify-center items-center text-black z-20'>
+                    <li>
+                      <Link to="/catalog">Каталог квартир</Link>
+                    </li>
+                    <li>
+                      <Link to="/ipoteka">Ипотека</Link>
+                    </li>
+                    <li>
+                      <Link to="/contacts">Контакты</Link>
+                    </li>
+                  </div>
+                )
+                : ''
               }
             </div>
           </div>
